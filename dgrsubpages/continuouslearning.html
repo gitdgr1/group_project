@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <head>
-<title>Dinesh's Page</title>
+<title>IT 115</title>
 </head>
 
 <style>
@@ -40,27 +40,38 @@ body {
         a {
         color:lightgoldenrodyellow; /* Set the default color for hyperlinks */
         text-decoration: none; /* Remove underline from hyperlinks */
+        display: inline-block;
         }
 
         a:hover {
         color: yellow; /* Change color on hover (optional) */
         }
+
+        a.inline-text {
+            margin-right: 20px;
+        }
 </style>
 
 <body>
-    <h1 style="height: 100px">Welcome to Dinesh's Page</h1>
+    <h1 style="height: 100px">Learning Stuff</h1>
 
-    <!-- <h2 style="font-style:italic; height: 50px">Get to know Dinesh!</h2> -->
+    <h2 style="font-style:italic; height: 50px">Under Construction</h2>
+    <img src="../images/under-construction.png" alt="Under Construction">
     <!-- <h3>Dinesh</h3> -->
-    <ul>
-        <li><a href="./dgrsubpages/it115.html" style="font-size: x-large">IT115 Learnings & Observations</a></li>
-        <li><a href="./dgrsubpages/coolpix.html" style="font-size: x-large">Cool Pictures</a></li>
-        <li><a href="./dgrsubpages/continuouslearning.html" style="font-size: x-large">Learning Stuff</a></li>
-        <li><a href="./dgrsubpages/mappytime.html" style="font-size: x-large">Map Stuff</a></li>
-      </ul>
+    
     <!-- <p><em>Role: Product Owner</em></p> -->
     <!-- <p>Creates product requirements to meet customer goals.</p> -->
-    <a href="index.html" style="margin-top: 100px">Back to Main Page</a>
+    <span style="display: inline-flex; justify-content: center;">
+        <a class="inline-text" href="coolpix.html" style="margin-top: 50px; margin-right: 200px">Previous</a>
+        <a class="inline-text" href="mappytime.html" style="margin-top: 50px">Next</a>
+    </span>
+    <span style="display:inline-flex">
+        <a class="inline-text" href="../dinesh.html" style="margin-top: 50px">Back to Dinesh's Page</a>
+        <a class="inline-text" href="../johanna.html" style="margin-top: 50px">To Johanna's Page</a>
+        <a class="inline-text" href="../antonio.html" style="margin-top: 50px">To Antonio's Page</a>
+        <a class="inline-text" href="../chris.html" style="margin-top: 50px"> To Chris's Page</a>
+        
+    </span>
 
 </body>
 </html>
