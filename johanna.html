@@ -1,50 +1,52 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
 <head>
-<title>Johanna's page</title>
-</head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Johanna's page</title>
 <style>
+:root{
+    --c1: #4D6A6D;
+    --c2: #673C4F;
+    --c3: #52B788;
+    --c4: #82D4BB;
+    --c5: #FFBF69;}
+* {    
+    margin: 0;
+    padding: 0;}
 body {
-        background-color: darkslategray;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Arial, Helvetica, sans-serif;
-        color:aliceblue;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-        flex-direction: column;
-    }
-
-        h1{
-        color:darkorange;
-        line-height: 2.0;
-        }
-        h2{
-        color:salmon;
-        line-height: 1.6;
-        font-style: italic;
-        }
-        p{
-        color:goldenrod; 
-        line-height: 1.6;
-        }
-
-        a {
-        color: white; /* Set the default color for hyperlinks */
-        text-decoration: none; /* Remove underline from hyperlinks */
-        }
-
-        a:hover {
-        color: yellow; /* Change color on hover (optional) */
-        }
+    background-color: var(--c1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* height: 100vh; */
+    flex-direction: column;}
+h1 {
+    color: var(--c5);
+    line-height: 2.0;
+    margin-top: 20px;}
+h2, h3 {
+    color:var(--c3);
+    line-height: 1.6;
+    margin-top: 20px;}
+p {
+    color:var(--c4); 
+    line-height: 1.6;
+    margin-top: 20px;}
+a {
+    color: var(--c5); /* Set the default color for hyperlinks */
+    text-decoration: none; /* Remove underline from hyperlinks */}
+a:hover {
+    color: var(--c2); /* Change color on hover (optional) */}
+img {
+    border: 8px solid var(--c5);
+    margin-top: 20px;}
+iframe {
+    margin-top: 40px;
+    margin-bottom: 40px;}
 </style>
+</head>
 
 <body>
     <h1>Welcome to Johanna's Page</h1>
@@ -52,9 +54,11 @@ body {
     <img style="max-width: 150px;" src="images/pikachu.jpeg" alt="pikachu">
     <h3 id="johanna">Johanna</h3>
     <p><em>Role: Creative, Repo manager</em></p>
-    <p>Inspires creativity, manages pull requests and helps review code.</p>
+    <p>Inspires creativity, helps create content, manage pull requests, and review code.</p>
     <p>For a short bio, see Johanna's it161 page <a href="http://north.mystudentswa.com/johannaro/it161/">here.</a></p>
-
+    <p>For a sneak peek at other webpages by Johanna, see <a href="http://north.mystudentswa.com/johannaro/it161/colin/index.html">this page.</a></p>
+    <p>For relaxing music to work to, see the bottom of this page.</p>
     <h3><a href="index.html">Return to main</a></h3>
+    <iframe width="996" height="560" src="https://www.youtube.com/embed/Sx4xVyXHl60?autoplay=1" title="[Ghibli Music Collection 2023] 🌈 Best Ghibli Piano Collection 🍉 BGM for work/relax/study" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </body>
 </html>
