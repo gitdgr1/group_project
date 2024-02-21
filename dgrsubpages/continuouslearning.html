@@ -13,7 +13,7 @@ body {
         background-color: darkslategray;
         display: flex;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         font-family: Arial, Helvetica, sans-serif;
         color:aliceblue;
         height: 100vh;
@@ -29,12 +29,12 @@ body {
         }
         h2{
         color:salmon;
-        margin-top: 10px;
+        /* margin-top: 10px; */
         /* line-height: 1.0; */
         }
         p{
         color:goldenrod; 
-        line-height: 0.75;
+        line-height: 1.5;
         }
 
         a {
@@ -54,9 +54,29 @@ body {
 
 <body>
     <h1 style="height: 100px">Learning Stuff</h1>
-
-    <h2 style="font-style:italic; height: 50px">Under Construction</h2>
-    <img src="../images/under-construction.png" alt="Under Construction">
+    <span style="justify-content: left">
+    <h2 style="justify-content: left; margin-bottom: 0px">A Tasty Python Sandwich!</h2>
+    <p style="max-width: 640px; background-color: #345454; color: aliceblue; font-style: italic; padding: 10px; margin-top: 0px">I'm halfway thru building what I hope
+        will be a really tasty Python sandwich. To no one's surprise, the center of this sandwich is the very friendly and powerful language, Python. The top and bottom layers
+        of this sandwich are Streamlit and DuckDB, respectively. The idea is to learn enough about all three to do some basic machine learning on a large dataset and display
+        the results in visually interesting ways. So far, I've learned just enough about Python and DuckDB - and I can't wait to get to Streamlit next!
+    </p>
+    <h2 style="justify-content: left; margin-bottom: 0px">I'll have SQL...wait, maybe NoSQL...wait, maybe BOTH!</h2>
+    <p style="max-width: 640px; background-color: #345454; color: aliceblue; font-style: italic; padding: 10px; margin-top: 0px">Everyone needs a little exposure to SQL. The little
+        I've learned has been very useful in allowing me to work with various databases that support this universal language. That said, its hard to miss the natural synergy between object-oriented 
+        languages like Java, JavaScript, Python - really any modern language - and the ad-hoc structure of NoSQL databases. Being able to move between the two is a skill I would like to master. I've
+        learned enough about both that I think a little more practice will allow me to feel that I get the basics.
+        </a>
+    </p>
+    <h2 style="justify-content: left; margin-bottom: 0px">AWS API Gateway and IAM Roles</h2>
+    <p style="max-width: 640px; background-color: #345454; color: aliceblue; font-style: italic; padding: 10px; margin-top: 0px">As part of an effort with a rag-tag collection of colleagues and Bob
+        Bunge of NSC and a fellow student, I've been working to port an open-source mapping service to AWS. We've made significant progress in standing it up as a cloud service. We now need to add basic
+        authentication and authorization controls - which is where AWS IAM Roles and AWS API Gateway come in, respectively. I hope to add these access controls to our cloud service by the end of this quarter
+        at NSC. I'll be happy to demo to those who are interested, once I get it done!
+    </p>
+    </span>
+    <!-- <h2 style="font-style:italic; height: 50px">Under Construction</h2> -->
+    <!-- <img src="../images/under-construction.png" alt="Under Construction"> -->
     <!-- <h3>Dinesh</h3> -->
     
     <!-- <p><em>Role: Product Owner</em></p> -->
