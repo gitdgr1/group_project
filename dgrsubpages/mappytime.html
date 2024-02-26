@@ -13,7 +13,7 @@ body {
         background-color: darkslategray;
         display:flex;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         font-family: Arial, Helvetica, sans-serif;
         color:aliceblue;
         height: 100vh;
@@ -29,12 +29,12 @@ body {
         }
         h2{
         color:salmon;
-        margin-top: 10px;
+        /* margin-top: 10px; */
         /* line-height: 1.0; */
         }
         p{
         color:goldenrod; 
-        line-height: 0.75;
+        line-height: 1.5;
         }
 
         a {
@@ -54,9 +54,19 @@ body {
 
 <body>
     <h1 style="height: 100px">Map Stuff</h1>
-
-    <h2 style="font-style:italic; height: 50px">Under Construction</h2>
-    <img src="../images/under-construction.png" alt="Under Construction">
+    <img style="max-height:1280px; max-width:720px" src="../images/Map_Composite.png" alt="Map Composite">
+    <span style="justify-content: left">
+        <h2 style="justify-content: left; margin-bottom: 0px">Fun With Maps!</h2>
+        <p style="max-width: 640px; background-color: #345454; color: aliceblue; font-style: italic; padding: 10px; margin-top: 0px">The image above shows a composite of
+            four very simple maps. The map in the top left quadrant shows all the zip codes in WA, the top right quadrant shows all earthquakes that happened all over the planet 
+            during a 30-day period, the bottom left quadrant shows a zoomed-in view of all buildings in Washington DC, as of 2018, while the bottom right quadrant shows the same
+            data but in a zoomed out view. I enjoy making these and more complicated maps because of the insights they can provide on a wide range of topics. The tools I use are 
+            free and open-source - which allows me to learn a lot of fundamental details that I would miss if I used point-n-click tools. If you want to learn more about one of the 
+            main tools I use, check out additional details at <a href="https://xyzmaps.github.io/xyz-documentation/">https://xyzmaps.github.io/xyz-documentation/</a>
+        </p>
+    </span>
+    <!-- <h2 style="font-style:italic; height: 50px">Under Construction</h2> -->
+    
     <!-- <h3>Dinesh</h3> -->
     
     <!-- <p><em>Role: Product Owner</em></p> -->

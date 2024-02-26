@@ -10,10 +10,10 @@
 
 <style>
 body {
-        background-color: darkslategray;
+        background-color: #2f4f4f;
         display: flex;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         font-family: Arial, Helvetica, sans-serif;
         color:aliceblue;
         height: 100vh;
@@ -29,12 +29,13 @@ body {
         }
         h2{
         color:salmon;
-        margin-top: 10px;
+        /* margin-top: 10px; */
         /* line-height: 1.0; */
         }
         p{
         color:goldenrod; 
-        line-height: 0.75;
+        /* margin-top: 10px; */
+        line-height: 1.5;
         }
 
         a {
@@ -54,9 +55,35 @@ body {
 
 <body>
     <h1 style="height: 100px">IT115 Learnings & Observations</h1>
+    <span style="justify-content: left">
+    <h2 style="justify-content: left; margin-bottom: 0px">Why its called a Pull Request</h2>
+    <p style="max-width: 640px; background-color: #345454; color: aliceblue; font-style: italic; padding: 10px; margin-top: 0px">Before I became familiar
+        with GitHub, I wondered why contributing your changes to a repo was called a Pull Request. To me, it seemed like it should be called a Push Request because 
+        you want your changes to be reviewed for inclusion into the repo. However, now that I've spent time learning Git and its interaction with GitHub I've learned 
+        that the term push is used to propogate changes and the term pull is used to integrate changes. With this understanding, I now get why its called a Pull Request, 
+        though it still seems a bit odd to me - it just doesn't bother me anymore :)  
+    </p>
+    <h2 style="justify-content: left; margin-bottom: 0px">Avoiding Chaos With Git Pull and Git Rebase</h2>
+    <p style="max-width: 640px; background-color: #345454; color: aliceblue; font-style: italic; padding: 10px; margin-top: 0px">A common issue that crops up when
+        a team starts working together is the tendency to create version chaos because multiple people are editing the same file at the same time or using `git add`
+        too loosely. Of course, an initial fix is to break up the work so more than one person isn't working on the same file. Another simple fix is to be more disciplined
+        about `git add` by targeting it to the specific file being changed rather than the entire directory - e.g. `git add [filename]`. After doing this, version chaos 
+        should reduce, but it is still possible to get out of sync. This is where `git pull` comes in. Ideally, its done before you start work on your branch and before you
+        do a `git add` or `git commit`. This way, if you see updates, you can address them before doing a `git push`. Sometimes, even a well timed `git pull` isn't enough. This
+        is where `git rebase` becomes essential. To learn a lot more, please visit: <a href = "https://github.com/Johanna206/assignment4/wiki">https://github.com/Johanna206/assignment4/wiki
+        </a>
+    </p>
+    <h2 style="justify-content: left; margin-bottom: 0px">Two Ways to Undo: Git Reset and Git Revert</h2>
+    <p style="max-width: 640px; background-color: #345454; color: aliceblue; font-style: italic; padding: 10px; margin-top: 0px">Recently, we learned about `git reset`
+        and `git revert` - two very different ways to undo changes you made in error or haste or without consulting all the relevant stakeholders. The way I've internalized the 
+        difference between the two commands is that `git reset` really undoes everything after a particular `git commit` while `git revert` undoes a `git commit` by creating a new commit that 
+        undoes a specific `git commit` . If we only consider the latest commit, the two have a similar effect on file contents, but different effects on commit history. Based on 
+        what I've learned, I would think very hard before using a `git reset` on anything that isn't the latest commit. I'm still learning, so I might change my mind later :)
+    </p>
+    </span>
 
-    <h2 style="font-style:italic; height: 50px">Under Construction</h2>
-    <img src="../images/under-construction.png" alt="Under Construction">
+    <!-- <h2 style="font-style:italic; height: 50px">Under Construction</h2> -->
+    <!-- <img src="../images/under-construction.png" alt="Under Construction"> -->
     <!-- <h3>Dinesh</h3> -->
     
     <!-- <p><em>Role: Product Owner</em></p> -->

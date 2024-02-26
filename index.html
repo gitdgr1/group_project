@@ -6,54 +6,156 @@
 
 <head>
 <title>Team 1</title>
-</head>
-
 <style>
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
-        background-color: darkslategray;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Arial, Helvetica, sans-serif;
-        color:aliceblue;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-        flex-direction: column;
-    }
+  background-color: lightgray;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Typography Styling */
+h1, h2, h3 {
+  margin: 20px 0px;
+  text-align: center;
+}
+h3 {
+  font-size: x-large;
+  margin-bottom: 40px;
+}
+.title {
+  color: grey;
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding: 0;
+}
+p {
+  margin-bottom: 20px;
+}
 
-        h1{
-        color:darkorange;
-        line-height: 2.0;
-        }
-        h2{
-        color:salmon;
-        line-height: 1.6;
-        }
-        p{
-        color:goldenrod; 
-        line-height: 1.6;
-        }
-
-        a {
-        color: white; /* Set the default color for hyperlinks */
-        text-decoration: none; /* Remove underline from hyperlinks */
-        }
-
-        a:hover {
-        color: yellow; /* Change color on hover (optional) */
-        }
+/* Three columns side by side */
+.row {
+  width: 940px;
+  margin: 0 auto;
+}
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  padding: 0 8px;
+}
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+}
+.card img {
+  width: 100%;
+} 
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.logo {
+  max-height: 20px;
+  max-width: 20px;
+  margin-right: 4px;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button a { color: white;
+text-decoration: none;}
+.button:hover {
+  background-color: #555;
+}
 </style>
+</head>
 
 <body>
     <h1>Welcome to Team One!</h1>
-    <h2 style="font-style:italic">Get to know the team!</h2>
+    <h3>Get to know the team!</h3>
 
-    <ul>
-      <li><a href="johanna.html" style="color: magenta; font-size: x-large">Johanna</a></li>
-      <li><a href="antonio.html" style="color: green; font-size: x-large">Antonio</a></li>
-      <li><a href="chris.html" style="color: darkblue; font-size: x-large">Chris</a></li>
-      <li><a href="dinesh.html" style="color: darkorange; font-size: x-large">Dinesh</a></li>
-    </ul>
+<!-- Meet the team -->
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div style="max-height: 158px; overflow: hidden;"><img src="images/pikachu.jpeg" alt="pikachu"></div>
+          <div class="container">
+            <h2>Johanna</h2>
+            <p class="title">Stylist, Creative</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p><a href="https://github.com/Johanna206"><img class="logo" src="images/github-mark.png" alt="github-mark">Johanna206</a></p>
+            <p><a href="johanna.html"><button class="button">See More</button></a></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <div style="max-height: 158px; overflow: hidden;"><img src="images/Cat.png" alt="cat"></div>
+          <div class="container">
+            <h2>Christopher</h2>
+            <p class="title">Editor, QA</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p><a href="https://github.com/NimbusDesign"><img class="logo" src="images/github-mark.png" alt="github-mark">NimbusDesign</a></p>
+            <p><a href="chris.html"><button class="button">See More</button></a></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <div style="max-height: 158px; overflow: hidden;"><img src="images/The_Cascades.jpeg" alt="The_Cascades"></div>
+          <div class="container">
+            <h2>Dinesh</h2>
+            <p class="title">Product Owner</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p><a href="https://github.com/gitdgr1"><img class="logo" src="images/github-mark.png" alt="github-mark">gitdgr1</a></p>
+            <p><a href="dinesh.html"><button class="button">See More</button></a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <div style="max-height: 158px; overflow: hidden;"><img src="images/panda.jpg" alt="panda"></div>
+          <div class="container">
+            <h2>Antonio</h2>
+            <p class="title">UI Designer</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p><a href="https://github.com/Pandapo206"><img class="logo" src="images/github-mark.png" alt="github-mark">Pandapo206</a></p>
+            <p><a href="antonio.html"><button class="button">See More</button></a></p>
+          </div>
+        </div>
+      </div>
+    </div> 
 </body>
 </html>
