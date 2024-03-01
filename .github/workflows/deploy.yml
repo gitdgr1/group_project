@@ -1,0 +1,29 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Copy HTML files
+      run: |
+        cp *.html docs/
+        # Optionally, copy other assets like CSS, JS, or images if needed
+        cp -R images/* docs/
+        cp -R dgrsubpages/* docs/
+
+    - name: Deploy to GitHub Pages
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add docs/
+        git commit -m "Deploy HTML files to GitHub Pages"
+        git push origin main:gh-pages
