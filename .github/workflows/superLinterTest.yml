@@ -15,7 +15,7 @@ on:
 
 # Permissions
 
-permissons: read-all
+permissions: read-all
 
 # Workflow / Jobs
 
